@@ -1,0 +1,35 @@
+@import '../../style/variable.less';
+.header {
+  height: 64px;
+  background-color: @primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-left {
+    display: flex;
+  }
+}
+
+.body {
+  display: flex;
+  height: calc(100% - 64px);
+}
+.side {
+  height: 100%;
+  // flex-basis: 200px;
+  flex-shrink: 0;
+  // background-color: antiquewhite;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.content {
+  height: 100%;
+  background-color: aqua;
+  flex-basis: 100%;
+  overflow-y: auto;
+  padding: 10px;
+}
